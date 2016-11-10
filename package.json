@@ -6,13 +6,22 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
+    "bootstrap": "4.0.0-alpha.5",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-router": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "compile": "sass --update /Users/johnalbritton/Documents/Websites/alc-schedule/node_modules/bootstrap/scss/bootstrap.scss:src/bootstrap.css",
     "eject": "react-scripts eject"
-  }
+  },
+  "repository": {
+    "url": "https://github.com/jma921/alc-schedule.git",
+    "type": "git"
+  },
+  "author": "John Albritton <jma921@gmail.com>",
+  "license": "MIT"
 }
