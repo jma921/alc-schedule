@@ -1,7 +1,21 @@
 import React, {Component} from 'react';
+import base from '../helpers/base';
 import './Profile.css';
 
 class Profile extends Component {
+    constructor() {
+        super()
+        this.state = {
+            user: ''
+        }
+    }
+    componentDidMount() {
+        base.bindToState(`users`, {
+            context: this,
+            state: users,
+            asArray: true
+        })
+    }
     render() {
         return (
             <div>
