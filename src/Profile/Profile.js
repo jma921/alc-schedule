@@ -6,14 +6,15 @@ class Profile extends Component {
     constructor() {
         super()
         this.state = {
-            user: ''
+            user: '',
+            users: []
         }
     }
     componentDidMount() {
         base.bindToState(`users`, {
             context: this,
-            state: users,
-            asArray: true
+            state: 'users',
+            asArray: true         
         })
     }
     render() {
@@ -21,6 +22,7 @@ class Profile extends Component {
             <div>
                 <h3>Profile</h3>
                 <p className="lead">Here's some text</p>
+                
             </div>
         );
     }
