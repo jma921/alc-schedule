@@ -6,6 +6,7 @@ class Profile extends Component {
         return (
             <div>
                 <h3>Profile</h3>
+                <p className="lead">Here's some text</p>
             </div>
         );
     }
